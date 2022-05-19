@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Results for {{srch}}</title>
+    <link rel="stylesheet" href="static/results.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Search Results for {{srch}}:</h1>
+    {% for x in ress['articles']: %}
+      <div class="maindivres">
+        <h1>{{ress['articles'].index(x)+1}}:{{x['title']}}</h1>
+        <p>{{x['description']}}</p>
+        <a href="{{x['url']}}">Click here for full article.</a>
+      </div>
+    {%endfor%}
+  </body>
+</html>

@@ -1,0 +1,18 @@
+h1{
+  font-family: 'Major Mono Display', monospace;
+}
+p{
+  font-family: 'Cutive Mono', monospace;
+  font-size: 30px;
+}
+.maindivres{
+  border-style: solid;
+  border-color: black;
+  margin: 15px 50px 15px 50px;
+}
+a, a:hover, a:focus, a:active {
+     text-decoration: none;
+     color: #EB5E0B;
+     font-family: 'Cutive Mono', monospace;
+     font-size: 25px;
+}
